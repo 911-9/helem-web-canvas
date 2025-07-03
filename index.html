@@ -1,24 +1,87 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>helem-web-canvas</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-
-    <meta property="og:title" content="helem-web-canvas" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <title>Helem Leite - Portfólio Pessoal</title>
+    <meta name="description" content="Página pessoal de Helem Leite" />
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="container">
+      <header>
+        <h1>Helem Leite</h1>
+      </header>
+
+      <main>
+        <section class="about">
+          <p>Me chamo Helem Leite, tenho 23 anos, moro em Santa Catarina, amo tecnologia e tudo que envolve esse mundo tecnológico. Sou apaixonada por desenvolvimento de software e sempre busco aprender novas tecnologias para expandir meus conhecimentos e criar soluções inovadoras.</p>
+          
+          <button id="motivationBtn" class="cta-button">Clique para ver uma mensagem!</button>
+          <div id="motivationMessage" class="hidden"></div>
+        </section>
+
+        <section class="hobbies">
+          <h2>Meus Hobbies Favoritos</h2>
+          <ul>
+            <li>📚 Ler livros</li>
+            <li>📺 Assistir séries</li>
+            <li>💃 Dançar</li>
+          </ul>
+          
+          <div class="hobby-image">
+            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Livros em uma estante" />
+            <p class="image-caption">Uma das minhas paixões: a leitura</p>
+          </div>
+        </section>
+
+        <section class="travel">
+          <h2>Países que Gostaria de Visitar</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>País</th>
+                <th>Imagem</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>França</td>
+                <td>
+                  <img src="https://images.unsplash.com/photo-1502602898536-47ad22581b52?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Torre Eiffel em Paris, França" />
+                </td>
+              </tr>
+              <tr>
+                <td>Japão</td>
+                <td>
+                  <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Templo no Japão com cerejeiras" />
+                </td>
+              </tr>
+              <tr>
+                <td>Alemanha</td>
+                <td>
+                  <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Castelo Neuschwanstein na Alemanha" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="links">
+          <h2>Site de Interesse</h2>
+          <a href="https://www.tecnoblog.net/" target="_blank" rel="noopener noreferrer">
+            🚀 Tecnoblog - Portal de Tecnologia
+          </a>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2024 Helem Leite. Todos os direitos reservados.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
